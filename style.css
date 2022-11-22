@@ -46,6 +46,9 @@ span{
 .white{
     color: white;
 }
+.light-grey{
+    color: #aaaaaa;
+}
 .none{
     margin: 0;
 }
@@ -119,7 +122,8 @@ footer{
 }
 .main-cols{
     flex-direction: column;
-    padding: 25px;    
+    padding: 25px; 
+    overflow: auto;   
 }
 .main-cols>*{
     margin-bottom: 20px;
@@ -211,11 +215,20 @@ footer .row{
     height: 100px;
     justify-content: space-between;
     align-items: center;
+    
 }
 footer .col-small{
     flex-basis: 400px;
     margin-left: 10px;
     margin-right: 30px;
+}
+footer .col-large{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    height: 80px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 
@@ -234,7 +247,40 @@ footer .col-small{
 }
 
 
+.media-btns{
+    gap: 30px;
+}
+.media-btns a >*{
+    font-size: 1rem;
+    color: white;
+}
+.fa-play{
+    padding: 5px 6px;
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius: 100%;
+}
 
+.track-wrap{
+    height: 5px;
+    width: 400px;
+    margin: 0 20px;
+
+    background-color: #717171;
+    border-radius: 20px;
+
+    position: relative;
+}
+.track-bar{
+    width: 20%;
+    height: 100%;
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 
 

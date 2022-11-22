@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5{
 }
 .fa-solid{
     color: white;
+    padding-right: 5px;
 }
 span{
     color: rgb(170, 170, 170);
@@ -59,6 +60,9 @@ span{
 }
 
 /* SIZES */
+.font-xxs{
+    font-size: 0.7rem;
+}
 .font-xs{
     font-size: 0.8rem;
 }
@@ -147,6 +151,7 @@ footer{
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
 .square{
     background-color: rgb(170, 170, 170);
     height: 40px;
@@ -251,6 +256,7 @@ h3 a {
     flex-wrap: wrap;
     text-align: center;
 }
+
 .album{
     max-width: 200px;
     gap: 10px;
@@ -260,23 +266,23 @@ h3 a {
 }
 .img-box {
     max-width: 100%;
+    position: relative;
+
 }
 .img-box img{
     max-width: 100%;
 }
+.play-on-album{
+    display: none;
+    position: absolute;
+
+    top: 80px;
+    left: 80px;
+
+}
 .circle-box img{
     border-radius: 100%;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -382,4 +388,26 @@ footer .col-large{
 }
 
 
-/**/
+/* HOVER */
+.bigger:hover{
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+.bigger-control-btn:hover{
+    font-size: 1rem;
+}
+.artist:hover{
+    border-bottom: 1px white solid;
+}
+a:hover {
+    color: white;
+}
+.track-bar:hover, .volume-bar:hover{
+    background-color: rgb(25, 212, 25);
+}
+.img-box img:hover{
+    filter: brightness(0.5);
+
+}
+
+/* RESPONSIVE */

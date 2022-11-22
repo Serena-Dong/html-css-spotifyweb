@@ -33,9 +33,11 @@ ul li{
 }
 a, ul li, p{
     color: #aaaaaa;
-    margin-bottom: 15px;
 }
 h1, h2, h3, h4, h5{
+    color: white;
+}
+.fa-solid{
     color: white;
 }
 span{
@@ -50,7 +52,7 @@ span{
     color: #aaaaaa;
 }
 .none{
-    margin: 0;
+    margin: 0p;
 }
 .text{
     padding: 15px;
@@ -72,6 +74,9 @@ span{
 .font-xl{
     font-size: 3rem;
 }
+.mb-s{
+    margin-bottom: 1rem;
+}
 
 
 /* LAYOUT */
@@ -82,13 +87,11 @@ span{
     height: 100vh;
 }
 .top-part{
-
     display: flex;
     flex: 1 1 auto;
     /* height: calc(100% - 100px);*/
 
     overflow: auto;
-    
 }
 .sidebar{
     background-color: rgb(20, 20, 20);
@@ -128,6 +131,10 @@ footer{
 .main-cols>*{
     margin-bottom: 20px;
 }
+.main-cols ul>*{
+    margin-bottom: 15px;
+}
+
 .logo img{
     width: 80%;
     margin-bottom: 1rem;
@@ -250,10 +257,6 @@ footer .col-large{
 .media-btns{
     gap: 30px;
 }
-.media-btns a >*{
-    font-size: 1rem;
-    color: white;
-}
 .fa-play{
     padding: 5px 6px;
     border: 2px rgb(255, 255, 255) solid;
@@ -282,8 +285,37 @@ footer .col-large{
     left: 0;
 }
 
+.control-btns{
+    height: 100px;
+}
+.control-btns .row{
+    justify-content: flex-end ;
+    align-content: center;
+}
+.control-btns ul{
+    gap: 15px;
+}
+.volume-wrap{
+    height: 5px;
+    width: 100px;
+    margin: 0 20px;
+    border-radius: 20px;
 
+    background-color: #717171;
 
+    position: relative;
+}
+.volume-bar{
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 
 /**/

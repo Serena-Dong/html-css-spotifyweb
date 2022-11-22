@@ -21,17 +21,18 @@ body{
     display: flex;
 }
 .card{
-    align-items: center;
+    display: flex;
 }
 
 a{
     text-decoration: none;
+    font-size: 0.8rem;
 }
 ul li{
     list-style: none;
 }
 a, ul li, p{
-    color: rgb(170, 170, 170);
+    color: #aaaaaa;
     margin-bottom: 15px;
 }
 h1, h2, h3, h4, h5{
@@ -114,20 +115,26 @@ footer{
 /* SIDEBAR */
 .sidebar{
     flex-direction: column;
-    padding: 25px;
+    justify-content: space-between;
 }
-.sidebar>*{
+.main-cols{
+    flex-direction: column;
+    padding: 25px;    
+}
+.main-cols>*{
     margin-bottom: 20px;
 }
 .logo img{
     width: 80%;
+    margin-bottom: 1rem;
 }
 .add{
+    align-items: center;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 .square{
-    background-color: white;
+    background-color: rgb(170, 170, 170);
     height: 40px;
     width: 40px;
     margin-right: 10px;
@@ -142,9 +149,46 @@ footer{
     top: 0;
     left: 10px;
 }
-.install{
-    align-items: flex-end;
+.playlists-card{
+
+    max-height: 300px;
+    overflow: auto;
 }
+
+.col-footer{
+    align-items: flex-end;
+    padding: 10px 25px 5px;
+}
+.install{
+    align-content: center;
+    margin-bottom: 15px;
+    border-bottom: 0.1px solid rgb(170, 170, 170);
+}
+.install-box{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+.user {
+    height: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -10px;
+}
+.user-box{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+
+    background-color: #aaaaaa;
+    border-radius: 50px;
+
+    background-image: url("./img/profile.svg");
+    background-size: cover;
+} 
+
+
+
 
 /* HEADER */
 

@@ -232,17 +232,28 @@ footer{
 .green{
     border-bottom: 2px green solid;
 }
-.title{
-    margin-bottom: 10px;
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title p{
+    font-size: 0.8rem;
+}
+h3 a {
+    margin-bottom: 0.5rem;
+    color: white;
 }
 .container-album{
     gap: 20px;
     flex-wrap: wrap;
+    text-align: center;
 }
 .album{
     max-width: 200px;
     gap: 10px;
-
 
     flex-direction: column;
     align-items: center;
@@ -253,12 +264,9 @@ footer{
 .img-box img{
     max-width: 100%;
 }
-.recents{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.circle-box img{
+    border-radius: 100%;
 }
-
 
 
 

@@ -14,8 +14,8 @@ body{
 }
 /* UTILS */
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 30px;
 }
 .flex, .row, .card{
     display: flex;
@@ -109,6 +109,9 @@ main{
 header{
     background-color: rgb(28, 28, 28);
     height: 90px;
+
+    position: sticky;
+    top: 0;
 }
 
 footer{
@@ -204,11 +207,10 @@ footer{
 /* HEADER */
 
 .header-container{
+    height: 90px;
+
     justify-content: flex-end;
     align-items: center;
-    height: 90px;
-    position: sticky;
-    top: 0;
 }
 .btn{
     color: white;
@@ -222,11 +224,39 @@ footer{
 .nav-actions ul{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
     gap: 20px;
     margin: 20px;
 }
 .green{
     border-bottom: 2px green solid;
+}
+.title{
+    margin-bottom: 10px;
+}
+.container-album{
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.album{
+    max-width: 200px;
+    gap: 10px;
+
+
+    flex-direction: column;
+    align-items: center;
+}
+.img-box {
+    max-width: 100%;
+}
+.img-box img{
+    max-width: 100%;
+}
+.recents{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 

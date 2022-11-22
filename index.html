@@ -6,10 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/favicon.ico">
+    
     
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="top-part">
+            <div class="sidebar flex">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="">
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href=""><span><i class="fa-solid fa-house"></i></span> Home</a></li>
+                        <li><a href=""><span><i class="fa-solid fa-magnifying-glass"></i></span> Cerca</a></li>
+                        <li><a href=""><span><i class="fa-solid fa-book"></i></span> La tua libreria</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>PLAYLIST</h5>
+                    <div class="card add">
+                        <div class="square"><p id="plus">+</p></div>
+                        <a id="none" href=""> Crea Playlist</a>
+                    </div>
+                    <ul>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                    </ul>
+                </div>
+                <div class="col install">
+                    <a href="">Installa app</a>
+                </div>
+            </div>
+            <main>
+                <header>
+                    <div class="header-container flex">
+                        <a class="btn font-xs none" href="">EFFETTUA L'UPGRADE</a>
+                    </div>
+                </header>
+                <div class="content">
+                    
+                </div>
+            </main>
+        </div>
+        <footer>
+            <div class="row">
+                <div class="col-small">
+                    <div class="left-block flex">
+                        
+                        <div class="card playing flex">
+                            <img id="playing-img" src="./img/sinister.jpeg" alt="">
+                            <div class="text font-xs none">
+                                <h4><a class="white" href="">Sinister</a></h4>
+                                <a href=""> Brano Nome</a><
+                            </div>
+                        </div>
+                        <div class="icons">
+
+                            <a href=""><i class="fa-regular fa-heart"></i> </a>
+                            <a href=""><i class="fa-regular fa-folder"></i></a>
+                        </div>
+                            
+                        </div>
+                </div>
+            </div>
+            <div class="col-large"></div>
+            <div class="col-small"></div>
+        </footer>
+    </div>
 </body>
 </html>

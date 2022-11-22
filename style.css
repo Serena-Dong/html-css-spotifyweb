@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+.body{
+    color: white;
+}
+.border{
+    border: 2px dashed black;
+}
+/* UTILS */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex, .row, .card{
+    display: flex;
+}
+.card{
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+a, ul li, p{
+    color: rgb(170, 170, 170);
+    margin-bottom: 15px;
+}
+h1, h2, h3, h4, h5{
+    color: white;
+}
+span{
+    color: rgb(170, 170, 170);
+    font-size: 0.9rem;
+    line-height: 0.5;
+}
+.white{
+    color: white;
+}
+.none{
+    margin: 0;
+}
+.text{
+    padding: 15px;
+}
+
+/* SIZES */
+.font-xs{
+    font-size: 0.8rem;
+}
+.font-s{
+    font-size: 1rem;
+}
+.font-m{
+    font-size: 1.5rem;
+}
+.font-l{
+    font-size: 2rem;
+}
+.font-xl{
+    font-size: 3rem;
+}
+
+
+/* LAYOUT */
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.top-part{
+
+    display: flex;
+    flex: 1 1 auto;
+    /* height: calc(100% - 100px);*/
+
+    overflow: auto;
+    
+}
+.sidebar{
+    background-color: rgb(20, 20, 20);
+    
+    flex: 0 0 240px;
+    overflow: auto;
+}
+main{
+    background-color: rgb(34, 34, 34);
+    
+    flex: 1 1 auto;
+    overflow: auto;
+    
+}
+header{
+    background-color: rgb(28, 28, 28);
+    height: 90px;
+}
+
+footer{
+    background-color: rgb(54, 54, 54);
+
+    flex: 0 0 100px;
+    /* height: 100px;  */
+}
+
+/* SIDEBAR */
+.sidebar{
+    flex-direction: column;
+    padding: 25px;
+}
+.sidebar>*{
+    margin-bottom: 20px;
+}
+.logo img{
+    width: 80%;
+}
+.add{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.square{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+
+    position: relative;
+}
+#plus{
+    color: black;
+    font-size: 2rem;
+    
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+.install{
+    align-items: flex-end;
+}
+
+/* HEADER */
+
+.header-container{
+    justify-content: flex-end;
+    align-items: center;
+    height: 90px;
+}
+.btn{
+    color: white;
+    border: white 2px solid;
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin-right: 30px;
+}
+
+/* CONTENT */
+/* FOOTER */
+footer .row{
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .col-small{
+    flex-basis: 400px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+
+
+.left-block{
+    align-items: center;
+}
+.playing{
+   margin-right: -230px;
+}
+.icons a{
+    padding: 5px;
+}
+#playing-img{
+    width: 15%;
+}
+
+
+
+
+
+
+
+
+/**/

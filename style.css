@@ -5,11 +5,12 @@
 }
 
 /* GENERAL */
-.body{
+body{
+    font-family: 'Montserrat', sans-serif;
     color: white;
 }
 .border{
-    border: 2px dashed black;
+    border: 2px dashed white;
 }
 /* UTILS */
 .container{
